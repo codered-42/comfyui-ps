@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><link rel="stylesheet" href="styles.css"></head>
+<body>
+  <div class="panel">
+    <sp-heading size="S">ComfyUI Photos</sp-heading>
+    <sp-label for="server-url">ComfyUI address</sp-label>
+    <sp-textfield id="server-url" placeholder="http://127.0.0.1:8188/" value="http://127.0.0.1:8188/"></sp-textfield>
+    <sp-button id="send-image" variant="primary">Send Image</sp-button>
+    <sp-button id="get-result" variant="secondary">Get Result</sp-button>
+    <div id="status" class="status" role="status">Ready. Open an image in Photoshop to send it.</div>
+    <div id="menu-status" class="menu-status">ComfyUI right-click menus: connecting...</div>
+    <div class="instructions">
+      <sp-label>ComfyUI right-click menus</sp-label>
+      <p>On an image: <b>Send to Photoshop</b>.</p>
+      <p>On a Load Image node: <b>Receive Photoshop image</b>. Each receive gets its own file.</p>
+      <p>Keep this panel open to use the menus.</p>
+      <sp-label>Manual buttons</sp-label>
+      <p>1. Click <b>Send Image</b>.</p>
+      <p>2. First time only: refresh ComfyUI and select <b>photoshop-bridge.png</b> in your <b>Load Image</b> node.</p>
+      <p>3. Connect <b>Save Image</b> to the result you want, then run your workflow.</p>
+      <p>4. Click <b>Get Result</b>. The latest saved image opens as a new Photoshop document.</p>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

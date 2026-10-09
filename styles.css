@@ -1,0 +1,13 @@
+﻿html, body { height: 100%; }
+body { overflow: hidden; margin: 0; color: var(--uxp-host-text-color); background: var(--uxp-host-background-color); font-size: 13px; }
+.panel { height: 100%; box-sizing: border-box; overflow: auto; padding: 16px; }
+sp-heading { margin: 0 0 14px; }
+sp-label { display: block; margin-bottom: 5px; }
+sp-textfield { width: 100%; margin-bottom: 14px; }
+sp-button { display: block; width: 100%; margin-bottom: 8px; }
+.status { margin-top: 14px; padding: 10px; border: 1px solid #777; border-radius: 4px; white-space: pre-wrap; overflow-wrap: break-word; }
+.status.error { color: #ffb4a9; border-color: #c75c52; }
+.instructions { margin-top: 20px; opacity: 0.85; }
+p { margin: 6px 0 10px; line-height: 1.5; }
+
+.menu-status { margin-top: 10px; font-size: 12px; opacity: 0.85; }

@@ -1,0 +1,45 @@
+# Local runtime settings
+/settings.json
+
+# Dependencies and Python caches
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+coverage/
+
+# Credentials and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Logs, temporary files, and local image/document data
+*.log
+*.tmp
+*.bak
+/logs/
+/diagnostics/
+/backups/
+/input/
+/output/
+/temp/
+/tmp/
+/photoshop-bridge.png
+/photoshop-*.png
+/comfy-to-photoshop-*.png
+/ComfyUI-*.png
+*.psd
+*.psb
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini

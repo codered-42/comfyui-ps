@@ -1,0 +1,81 @@
+{
+  "manifestVersion": 5,
+  "id": "comfyui-ps",
+  "name": "ComfyUI Photos",
+  "version": "0.3.0",
+  "main": "index.html",
+  "host": {
+    "app": "PS",
+    "minVersion": "25.0.0",
+    "data": {
+      "apiVersion": 2
+    }
+  },
+  "entrypoints": [
+    {
+      "type": "panel",
+      "id": "comfyui-ps-panel",
+      "label": {
+        "default": "ComfyUI Photos"
+      },
+      "minimumSize": {
+        "width": 280,
+        "height": 350
+      },
+      "preferredDockedSize": {
+        "width": 310,
+        "height": 420
+      },
+      "preferredFloatingSize": {
+        "width": 330,
+        "height": 460
+      },
+      "icons": [
+        {
+          "width": 48,
+          "height": 48,
+          "path": "icon.png",
+          "scale": [
+            1
+          ],
+          "theme": [
+            "darkest",
+            "dark",
+            "medium",
+            "light",
+            "lightest"
+          ]
+        }
+      ],
+      "maximumSize": {
+        "width": 2000,
+        "height": 2000
+      }
+    }
+  ],
+  "requiredPermissions": {
+    "network": {
+      "domains": "all"
+    }
+  },
+  "icons": [
+    {
+      "width": 48,
+      "height": 48,
+      "path": "icon.png",
+      "scale": [
+        1
+      ],
+      "theme": [
+        "darkest",
+        "dark",
+        "medium",
+        "light",
+        "lightest"
+      ],
+      "species": [
+        "pluginList"
+      ]
+    }
+  ]
+}
